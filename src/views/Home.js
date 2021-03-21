@@ -4,60 +4,21 @@ import { Link } from "react-router-dom";
 
 import IndexNavbar from "components/Navbars/IndexNavbar.js";
 import Footer from "components/Footers/Footer.js";
+import TopPannel from "components/Home/TopPannel.js";
+import HighlightPannel from "components/Home/HighlightPannel.js";
 
-export default function Index() {
+import { Component } from "react";
+
+export default function Home() {
   return (
     <>
       <IndexNavbar fixed />
-      <section className="header relative pt-16 items-center flex h-screen max-h-860-px">
-        <div className="container mx-auto items-center flex flex-wrap">
-          <div className="w-full md:w-8/12 lg:w-6/12 xl:w-6/12 px-4">
-            <div className="pt-32 sm:pt-0">
-              <h2 className="font-semibold text-4xl text-gray-700">
-                Notus React - A beautiful extension for Tailwind CSS.
-              </h2>
-              <p className="mt-4 text-lg leading-relaxed text-gray-600">
-                Notus React is Free and Open Source. It does not change or add
-                any CSS to the already one from{" "}
-                <a
-                  href="https://tailwindcss.com/?ref=creativetim"
-                  className="text-gray-700"
-                  target="_blank"
-                >
-                  Tailwind CSS
-                </a>
-                . It features multiple HTML elements and it comes with dynamic
-                components for ReactJS, Vue and Angular.
-              </p>
-              <div className="mt-12">
-                <a
-                  href="https://www.creative-tim.com/learning-lab/tailwind/react/overview/notus?ref=nr-index"
-                  target="_blank"
-                  className="get-started text-white font-bold px-6 py-4 rounded outline-none focus:outline-none mr-1 mb-1 bg-blue-500 active:bg-blue-600 uppercase text-sm shadow hover:shadow-lg ease-linear transition-all duration-150"
-                >
-                  Get started
-                </a>
-                <a
-                  href="https://github.com/creativetimofficial/notus-react?ref=nr-index"
-                  className="github-star ml-1 text-white font-bold px-6 py-4 rounded outline-none focus:outline-none mr-1 mb-1 bg-gray-800 active:bg-gray-700 uppercase text-sm shadow hover:shadow-lg ease-linear transition-all duration-150"
-                  target="_blank"
-                >
-                  Github Star
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
+      <TopPannel/>
+      <HighlightPannel/>
 
-        <img
-          className="absolute top-0 b-auto right-0 pt-16 sm:w-6/12 -mt-48 sm:mt-0 w-10/12 max-h-860px"
-          src={require("assets/img/pattern_react.png")}
-          alt="..."
-        />
-      </section>
 
       <section className="mt-48 md:mt-40 pb-40 relative bg-gray-200">
-        <div
+        {/* <div
           className="-mt-20 top-0 bottom-auto left-0 right-0 w-full absolute h-20"
           style={{ transform: "translateZ(0)" }}
         >
@@ -75,8 +36,8 @@ export default function Index() {
               points="2560 0 2560 100 0 100"
             ></polygon>
           </svg>
-        </div>
-        <div className="container mx-auto">
+        </div> */}
+        {/* <div className="container mx-auto">
           <div className="flex flex-wrap items-center">
             <div className="w-10/12 md:w-6/12 lg:w-4/12 px-12 md:px-4 mr-auto ml-auto -mt-32">
               <div className="relative flex flex-col min-w-0 break-words bg-white w-full mb-6 shadow-lg rounded-lg bg-blue-600">
@@ -173,9 +134,9 @@ export default function Index() {
               </div>
             </div>
           </div>
-        </div>
+        </div> */}
 
-        <div className="container mx-auto overflow-hidden pb-20">
+        {/* <div className="container mx-auto overflow-hidden pb-20">
           <div className="flex flex-wrap items-center">
             <div className="w-full md:w-4/12 px-12 md:px-4 ml-auto mr-auto mt-48">
               <div className="text-gray-600 p-3 text-center inline-flex items-center justify-center w-16 h-16 mb-6 shadow-lg rounded-full bg-white">
@@ -413,9 +374,9 @@ export default function Index() {
               </a>
             </div>
           </div>
-        </div>
+        </div> */}
 
-        <div className="container mx-auto px-4 pb-32 pt-48">
+        {/* <div className="container mx-auto px-4 pb-32 pt-48">
           <div className="items-center flex flex-wrap">
             <div className="w-full md:w-5/12 ml-auto px-12 md:px-4">
               <div className="md:pr-12">
@@ -490,9 +451,9 @@ export default function Index() {
               />
             </div>
           </div>
-        </div>
+        </div> */}
 
-        <div className="justify-center text-center flex flex-wrap mt-24">
+        {/* <div className="justify-center text-center flex flex-wrap mt-24">
           <div className="w-full md:w-6/12 px-12 md:px-4">
             <h2 className="font-semibold text-4xl">Beautiful Example Pages</h2>
             <p className="text-lg leading-relaxed mt-4 mb-4 text-gray-600">
@@ -501,65 +462,12 @@ export default function Index() {
               start playing with them.
             </p>
           </div>
-        </div>
+        </div> */}
       </section>
 
-      <section className="block relative z-1 bg-gray-700">
-        <div className="container mx-auto">
-          <div className="justify-center flex flex-wrap">
-            <div className="w-full lg:w-12/12 px-4  -mt-24">
-              <div className="flex flex-wrap">
-                <div className="w-full lg:w-4/12 px-4">
-                  <h5 className="text-xl font-semibold pb-4 text-center">
-                    Login Page
-                  </h5>
-                  <Link to="/auth/login">
-                    <div className="hover:-mt-4 relative flex flex-col min-w-0 break-words bg-white w-full mb-6 shadow-lg rounded-lg ease-linear transition-all duration-150">
-                      <img
-                        alt="..."
-                        className="align-middle border-none max-w-full h-auto rounded-lg"
-                        src={require("assets/img/login.jpg")}
-                      />
-                    </div>
-                  </Link>
-                </div>
+      
 
-                <div className="w-full lg:w-4/12 px-4">
-                  <h5 className="text-xl font-semibold pb-4 text-center">
-                    Profile Page
-                  </h5>
-                  <Link to="/profile">
-                    <div className="hover:-mt-4 relative flex flex-col min-w-0 break-words bg-white w-full mb-6 shadow-lg rounded-lg ease-linear transition-all duration-150">
-                      <img
-                        alt="..."
-                        className="align-middle border-none max-w-full h-auto rounded-lg"
-                        src={require("assets/img/profile.jpg")}
-                      />
-                    </div>
-                  </Link>
-                </div>
-
-                <div className="w-full lg:w-4/12 px-4">
-                  <h5 className="text-xl font-semibold pb-4 text-center">
-                    Landing Page
-                  </h5>
-                  <Link to="/landing">
-                    <div className="hover:-mt-4 relative flex flex-col min-w-0 break-words bg-white w-full mb-6 shadow-lg rounded-lg ease-linear transition-all duration-150">
-                      <img
-                        alt="..."
-                        className="align-middle border-none max-w-full h-auto rounded-lg"
-                        src={require("assets/img/landing.jpg")}
-                      />
-                    </div>
-                  </Link>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section className="py-20 bg-gray-700 overflow-hidden">
+      {/* <section className="py-20 bg-gray-700 overflow-hidden">
         <div className="container mx-auto pb-64">
           <div className="flex flex-wrap justify-center">
             <div className="w-full md:w-5/12 px-12 md:px-4 ml-auto mr-auto md:mt-64">
@@ -600,9 +508,9 @@ export default function Index() {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
 
-      <section className="pb-16 bg-gray-300 relative pt-32">
+      {/* <section className="pb-16 bg-gray-300 relative pt-32">
         <div
           className="-mt-20 top-0 bottom-auto left-0 right-0 w-full absolute h-20"
           style={{ transform: "translateZ(0)" }}
@@ -660,7 +568,7 @@ export default function Index() {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
       <Footer />
     </>
   );
