@@ -13,8 +13,9 @@ import Auth from "layouts/Auth.js";
 // views without layouts
 
 import Landing from "views/Landing.js";
-import Profile from "views/Profile.js";
+import List from "views/Profile.js";
 import Home from "views/Home.js";
+import Post from "views/Post.js";
 
 ReactDOM.render(
   <BrowserRouter>
@@ -24,7 +25,8 @@ ReactDOM.render(
       <Route path="/auth" component={Auth} />
       {/* add routes without layouts */}
       <Route path="/landing" exact component={Landing} />
-      <Route path="/profile" exact component={Profile} />
+      <Route path="/list" exact component={List} />
+      <Route path="/post" exact component={Post} />
       <Route path="/" exact component={Home} />
       {/* add redirect for first page */}
       <Redirect from="*" to="/" />

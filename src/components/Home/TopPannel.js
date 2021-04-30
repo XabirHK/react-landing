@@ -16,7 +16,7 @@ export default function TopPannel() {
                 <p className="mt-4 text-lg leading-relaxed text-gray-600">
                 আমার স্বপ্নগুলো ডানা মেলে {" "}
                 <a
-                    href="https://tailwindcss.com/?ref=creativetim"
+                    href=""
                     className="text-gray-700"
                     target="_blank"
                 >

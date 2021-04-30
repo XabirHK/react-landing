@@ -1,12 +1,13 @@
 import React from "react";
 
-import Navbar from "components/Navbars/AuthNavbar.js";
+// import Navbar from "components/Navbars/AuthNavbar.js";
+import IndexNavbar from "components/Navbars/IndexNavbar.js";
 import Footer from "components/Footers/Footer.js";
 
 export default function Profile() {
   return (
     <>
-      <Navbar transparent />
+      <IndexNavbar transparent />
       <main className="profile-page">
         <section className="relative block h-500-px">
           <div
@@ -41,12 +42,14 @@ export default function Profile() {
             </svg>
           </div>
         </section>
+
+
         <section className="relative py-16 bg-gray-300">
           <div className="container mx-auto px-4">
             <div className="relative flex flex-col min-w-0 break-words bg-white w-full mb-6 shadow-xl rounded-lg -mt-64">
               <div className="px-6">
-                <div className="flex flex-wrap justify-center">
-                  <div className="w-full lg:w-3/12 px-4 lg:order-2 flex justify-center">
+                <div className="flex flex-wrap">
+                  {/* <div className="w-full lg:w-3/12 px-4 lg:order-2 flex justify-center">
                     <div className="relative">
                       <img
                         alt="..."
@@ -54,8 +57,8 @@ export default function Profile() {
                         className="shadow-xl rounded-full h-auto align-middle border-none absolute -m-16 -ml-20 lg:-ml-16 max-w-150-px"
                       />
                     </div>
-                  </div>
-                  <div className="w-full lg:w-4/12 px-4 lg:order-3 lg:text-right lg:self-center">
+                  </div> */}
+                  {/* <div className="w-full lg:w-4/12 px-4 lg:order-3 lg:text-right lg:self-center">
                     <div className="py-6 px-3 mt-32 sm:mt-0">
                       <button
                         className="bg-blue-500 active:bg-blue-600 uppercase text-white font-bold hover:shadow-md shadow text-xs px-4 py-2 rounded outline-none focus:outline-none sm:mr-2 mb-1 ease-linear transition-all duration-150"
@@ -64,16 +67,19 @@ export default function Profile() {
                         Connect
                       </button>
                     </div>
-                  </div>
+                  </div> */}
                   <div className="w-full lg:w-4/12 px-4 lg:order-1">
-                    <div className="flex justify-center py-4 lg:pt-4 pt-8">
-                      <div className="mr-4 p-3 text-center">
+                    <div className="w-full py-4">
+                      <h3 className="float-left text-4xl font-semibold text-gray-800 mb-2">
+                      যাপিত জীবন                  
+                      </h3>
+                      {/* <div className="float-right p-3 text-center">
                         <span className="text-xl font-bold block uppercase tracking-wide text-gray-700">
                           22
                         </span>
-                        <span className="text-sm text-gray-500">Friends</span>
-                      </div>
-                      <div className="mr-4 p-3 text-center">
+                        <span className="text-sm text-gray-500">পোস্ট</span>
+                      </div> */}
+                      {/* <div className="mr-4 p-3 text-center">
                         <span className="text-xl font-bold block uppercase tracking-wide text-gray-700">
                           10
                         </span>
@@ -84,11 +90,17 @@ export default function Profile() {
                           89
                         </span>
                         <span className="text-sm text-gray-500">Comments</span>
-                      </div>
+                      </div> */}
                     </div>
                   </div>
                 </div>
-                <div className="text-center mt-12">
+
+                
+
+
+                
+
+                {/* <div className="text-center mt-12">
                   <h3 className="text-4xl font-semibold leading-normal mb-2 text-gray-800 mb-2">
                     Jenna Stones
                   </h3>
@@ -104,9 +116,9 @@ export default function Profile() {
                     <i className="fas fa-university mr-2 text-lg text-gray-500"></i>
                     University of Computer Science
                   </div>
-                </div>
+                </div> */}
                 <div className="mt-10 py-10 border-t border-gray-300 text-center">
-                  <div className="flex flex-wrap justify-center">
+                  {/* <div className="flex flex-wrap justify-center">
                     <div className="w-full lg:w-9/12 px-4">
                       <p className="mb-4 text-lg leading-relaxed text-gray-800">
                         An artist of considerable range, Jenna the name taken by
@@ -123,8 +135,57 @@ export default function Profile() {
                         Show more
                       </a>
                     </div>
-                  </div>
+                  </div> */}
                 </div>
+
+                
+                <div class="bg-gray-200 -mt-24 relative p-8 mb-8 rounded-lg">
+                  <h4 className="text-xl font-bold text-grey mb-4">
+                    নিশ্চিন্তপুর পরিচিতি
+                  </h4>
+
+                  
+                
+                  <p className="mt-4 mb-4 text-lg leading-relaxed text-gray-600">
+                  <div className="pr-4 float-left ml-auto mr-auto ">
+                    <img
+                      alt="..."
+                      src={require("assets/img/team-2-800x800.jpg")}
+                      className="shadow-lg rounded-lg mx-auto max-w-200-px"
+                    />
+                  </div>
+                  আমার স্বপ্নগুলো ডানা মেলে নিশ্চিন্তপুরে, যা আমার স্বপ্ন আর বাস্তবের মিশেলে তৈরী 
+                  একান্ত কল্পরাজ্য। এই কল্পরাজ্যের একটি বড় অংশ জুড়ে রয়েছে আমার ছেলেবেলায় 
+                  ফেলে আসা গ্রাম, সেখানে ভাঁট ফুলের গন্ধে ম ম করে বাতাস, নদীর ধারে বাবলা 
+                  আর জিওলবনের শীতল স্নিগ্ধ ছায়াতলে এক্কাদোক্কা খেলে চড়ুই, অদূরেই একটি 
+                  মাছরাঙ্গা লুব্ধ দৃষ্টিতে জলের তল খোঁজে আর মাথার উপর দিয়ে হঠাৎ উড়ে যায় 
+                  এক ঝাঁক ডাহুক। সেখানে বেলাশেষের ইন্দ্রজালে আজো মাঠ নদী বন মিলেমিশে 
+                  একাকার হয়। অস্থির ব্যস্ত এ সময়ে সারা দিনের ক্লান্তি ভোলার প্রয়াসে চোখ বুজলে 
+                  এখনো আমি চলে যায় আমার ছোট্ট গ্রামে, প্রাণভরে নিঃশ্বাস নিই। সতেজতা যখন 
+                  পুরো দেহ মন আচ্ছন্ন করে ফেলে, তারপর ফিরে আসি নতুন কিছু করার উদ্যম 
+                  আর শক্তি নিয়ে। আর তারই ফলাফল ভাগাভাগি করে নিই এই সাইবার নিশ্চিন্তপুরের
+                   সাথে।
+                  </p>
+                    <a
+                      href="#pablo"
+                      className="text-lg font-normal text-blue-500"
+                      onClick={(e) => e.preventDefault()}
+                    >
+                      বিস্তারিত 
+                    </a>
+                </div>
+                
+
+                
+              
+                
+
+
+
+
+
+
+    
               </div>
             </div>
           </div>

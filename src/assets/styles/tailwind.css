@@ -359,6 +359,9 @@ button {
   background-image: none;
 }
 
+p {
+  padding: 8px;
+}
 /**
  * Work around a Firefox/IE bug where the transparent `button` background
  * results in a loss of the default `button` focus styles.
@@ -1398,6 +1401,10 @@ video {
 
 .h-screen {
   height: 100vh;
+}
+
+.h-post {
+  height: 75vh;
 }
 
 .h-95-px {
