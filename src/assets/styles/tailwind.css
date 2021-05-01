@@ -1732,6 +1732,18 @@ video {
   max-width: 200px;
 }
 
+.max-w-250-px {
+  max-width: 250px;
+}
+
+.max-w-300-px {
+  max-width: 300px;
+}
+
+.max-w-350-px {
+  max-width: 350px;
+}
+
 .max-w-210-px {
   max-width: 210px;
 }

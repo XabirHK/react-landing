@@ -74,7 +74,7 @@ export default class Navbar extends Component {
                   <li key = {menuItem.categoryId} className="flex items-center">
                     <a
                       className="hover:text-gray-600 text-gray-800 px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold"
-                      href="#"
+                      href={`/list/${menuItem.categoryId}`}
                     >
                       <i className="text-gray-500 far text-lg leading-lg mr-2" />{" "}
                       {menuItem.title}

@@ -5,7 +5,7 @@ class TopMenuDataService {
       return http.get("/menu");
     }
   
-    get(id) {
+    getCategoryByid(id) {
       return http.get(`/menu/${id}`);
     }
   
