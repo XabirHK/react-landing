@@ -56,7 +56,7 @@ export default class HighlightPannel extends Component {
                                 <img
                                 alt="..."
                                 className="align-middle border-none max-w-full h-auto rounded-lg"
-                                src={topPost.primaryPicture == '' ? primaryPicture = "https://images.pexels.com/photos/20787/pexels-photo.jpg?auto=compress&cs=tinysrgb&h=350"  : primaryPicture = topPost.primaryPicture}
+                                src={topPost.primaryPicture == '' ? primaryPicture = "https://images.saatchiart.com/saatchi/809265/art/7274539/6343753-CUUCWJSM-7.jpg?auto=compress&cs=tinysrgb&h=350"  : primaryPicture = topPost.primaryPicture}
                                 />
                             </div>
                             </Link>

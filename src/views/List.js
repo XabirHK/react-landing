@@ -57,7 +57,7 @@ export default class List extends Component {
 
 
   render() {
-    var primaryPicture = "https://images.pexels.com/photos/20787/pexels-photo.jpg?auto=compress&cs=tinysrgb&h=350";
+    var primaryPicture = '';
     return (
       <>
         <IndexNavbar transparent />
@@ -110,7 +110,7 @@ export default class List extends Component {
                     
                     </div>
 
-                    <div class="bg-gray-200 -mt-24 relative p-8 mb-8 rounded-lg">
+                    <div class="bg-gray-200 -mt-24 relative p-8 mb-8 rounded-lg min-h-300">
                     <h4 className="text-xl font-bold text-grey mb-4">
                       {post.title}
                     </h4>
@@ -121,7 +121,7 @@ export default class List extends Component {
                     <div className="pr-4 float-left ml-auto mr-auto ">
                       <img
                         alt="..."
-                        src={post.primaryPicture !== '' ? primaryPicture = post.primaryPicture : primaryPicture}
+                        src={post.primaryPicture == '' ? primaryPicture = 'https://images.saatchiart.com/saatchi/809265/art/7274539/6343753-CUUCWJSM-7.jpg?auto=compress&cs=tinysrgb&h=350' : primaryPicture = post.primaryPicture }
                         className="shadow-lg rounded-lg mx-auto max-w-250-px"
                       />
                     </div>

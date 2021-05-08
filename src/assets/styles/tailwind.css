@@ -1752,6 +1752,13 @@ video {
   max-width: 580px;
 }
 
+.min-h-200 {
+  min-height: 200px;
+}
+.min-h-300 {
+  min-height: 300px;
+}
+
 .min-h-screen {
   min-height: 100vh;
 }
